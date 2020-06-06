@@ -1,3 +1,4 @@
+import Users from '@/views/Users';
 <template>
     <nav>
         <v-navigation-drawer v-model="drawer" dark app class="grey darken-3 py-0">
@@ -16,7 +17,7 @@
                         </v-progress-circular>
                     </v-col>
                     <v-col md="3">
-                        <v-icon right class="mt-1 theme--dark">fas fa-bars</v-icon>
+                        <v-icon right class="mt-1 ">fas fa-bars</v-icon>
                     </v-col>
                 </v-row>
             </v-container>
@@ -34,8 +35,9 @@
                         <v-icon small>fas fa-file</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>File Management</v-list-item-title>
-                        <v-chip color="yellow darken-3" small>3</v-chip>
+                        <v-list-item-title>File Management
+                            <v-chip color="lime accent-3" text-color="grey darken-3" x-small>3</v-chip>
+                        </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item router to="/send-messages">
@@ -59,7 +61,8 @@
                         <v-icon small>fas fa-users</v-icon>
                     </v-list-item-action>
                     <v-list-item-content>
-                        <v-list-item-title>Users</v-list-item-title>
+                        <v-list-item-title>Users
+                        </v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
                 <v-list-item router to="/reports">
@@ -75,7 +78,7 @@
                 <v-flex md-10>
                     <v-list-item dense>
                         <v-list-item-avatar class="ml-2">
-                            <v-img src="/03.png"></v-img>
+                            <v-img src="https://media.istockphoto.com/photos/businessman-silhouette-as-avatar-or-default-profile-picture-picture-id476085198?k=6&m=476085198&s=612x612&w=0&h=5cDQxXHFzgyz8qYeBQu2gCZq1_TN0z40e_8ayzne0X0="></v-img>
                         </v-list-item-avatar>
                         <v-list-item-action class="ml-8">
                             <v-badge color="error" overlap>
@@ -100,7 +103,7 @@
                     <v-card color="grey darken-1">
                         <v-list-item dense>
                             <v-list-item-action>
-                                <v-btn class="mx-2" fab dark small color="blue">
+                                <v-btn class="mx-2" fab dark small color="lime accent-3">
                                     <v-icon dark> mdi-heart</v-icon>
                                 </v-btn>
                             </v-list-item-action>

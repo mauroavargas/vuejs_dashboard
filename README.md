@@ -1,4 +1,4 @@
-# applicants
+# dashboard
 
 ## Project setup
 ```
